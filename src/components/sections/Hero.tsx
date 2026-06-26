@@ -25,31 +25,41 @@ export function Hero() {
       </div>
 
       <div className="container-rail">
-        <div className="grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
-          {/* Copy */}
-          <div className="flex flex-col gap-6">
+        <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
+          {/* New Copy integrated from Website 2 Style */}
+          <div className="flex flex-col items-center text-center lg:items-start lg:text-left gap-6">
+            
+            {/* Premium Trust Badge Container */}
             <Reveal>
-              <Eyebrow>24/7 Remote CCTV Monitoring</Eyebrow>
+              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-primary/30 bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest backdrop-blur-md shadow-glow">
+                <FiShield className="h-3.5 w-3.5" />
+                <span>Proactive Loss Prevention Network</span>
+                <FiArrowRight className="h-3 w-3 text-primary/70 ml-0.5" />
+              </div>
             </Reveal>
 
+            {/* Massive Conversional Headline Shell */}
             <Reveal delay={0.05}>
-              <h1 className="text-balance text-4xl font-semibold leading-[1.05] sm:text-5xl md:text-6xl">
-                Live eyes on your business,{' '}
-                <span className="text-glow">the moment it matters.</span>
+              <h1 className="text-balance text-4xl font-extrabold tracking-tight text-white leading-[1.1] sm:text-5xl md:text-6xl">
+                We Stop Crimes <br className="hidden sm:inline" />
+                <span className="text-glow text-primary">
+                  Before They Happen
+                </span>
               </h1>
             </Reveal>
 
+            {/* Professional Descriptive Typography Frame */}
             <Reveal delay={0.1}>
-              <p className="max-w-xl text-lg leading-relaxed text-muted">
-                OptiGuard&apos;s trained operators watch your existing cameras around the
-                clock — stopping theft in real time with live audio warnings, instant
-                alerts and human-verified incident reports. {SITE.tagline}
+              <p className="max-w-xl text-lg leading-relaxed text-muted font-medium">
+                Traditional alarms only record loss. OptiGuard deploys 24/7 remote live CCTV monitoring 
+                and AI-driven threat verification to intercept intruders, stop shrink, and secure retail assets in real-time.
               </p>
             </Reveal>
 
+            {/* Re-stacked Interactive Action Buttons */}
             <Reveal delay={0.15}>
-              <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-                <Button href="#contact" size="lg">
+              <div className="flex flex-col w-full sm:w-auto gap-3.5 sm:flex-row sm:items-center justify-center lg:justify-start">
+                <Button href="#contact" size="lg" className="shadow-[0_0_20px_rgba(var(--primary-rgb),0.3)]">
                   Start your free 3-day trial
                   <FiArrowRight className="h-4 w-4" aria-hidden />
                 </Button>
@@ -59,9 +69,10 @@ export function Hero() {
               </div>
             </Reveal>
 
+            {/* Metadata Badges & Phone Access Lines */}
             <Reveal delay={0.2}>
-              <div className="flex flex-wrap items-center gap-x-6 gap-y-2 pt-2 text-sm text-muted">
-                <a href={PHONE_HREF} className="flex items-center gap-2 hover:text-primary">
+              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-x-6 gap-y-2 pt-2 text-sm text-muted">
+                <a href={PHONE_HREF} className="flex items-center gap-2 hover:text-primary transition-colors">
                   <FiPhone className="h-4 w-4 text-primary" aria-hidden />
                   <span className="font-mono">{PHONE_DISPLAY}</span>
                 </a>
@@ -73,7 +84,7 @@ export function Hero() {
             </Reveal>
           </div>
 
-          {/* Live-feed composition — the signature moment */}
+          {/* Live-feed composition — Remained Unaltered */}
           <Reveal delay={0.15} className="relative">
             <div className="relative mx-auto w-full max-w-lg">
               <CamFrame
