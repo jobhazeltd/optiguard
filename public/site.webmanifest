@@ -1,0 +1,12 @@
+{
+  "name": "OptiGuard Monitoring",
+  "short_name": "OptiGuard",
+  "description": "24/7 live remote CCTV monitoring and loss prevention across the United States.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#030B17",
+  "theme_color": "#030B17",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
