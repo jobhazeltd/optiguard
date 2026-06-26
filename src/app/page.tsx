@@ -1,3 +1,6 @@
+"use client"; // Top par ensure karein ke use client ho takey window object access ho sake
+
+import { useEffect } from 'react';
 import { Hero } from '@/components/sections/Hero';
 import { TrustStats } from '@/components/sections/TrustStats';
 import { Services } from '@/components/sections/Services';
@@ -12,6 +15,18 @@ import { FAQ } from '@/components/sections/FAQ';
 import { Contact } from '@/components/sections/Contact';
 
 export default function HomePage() {
+  
+  // Refresh hone par page ko top par shift karne ka logic
+  useEffect(() => {
+    // 1. Browser ke auto scroll restoration ko manual pe set karein
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
+    }
+    
+    // 2. Window ko directly x: 0, y: 0 par bhej dein
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Hero />
