@@ -15,7 +15,7 @@ export const SITE = {
   legalName: 'OptiGuard Monitoring',
   tagline: 'We Keep You Ahead.',
   // Replace at deploy time with the production domain.
-  url: 'https://optiguardmonitoring.com',
+  url: 'https://optiguardmonitoring.cloud',
   description:
     'OptiGuard Monitoring provides 24/7 live remote CCTV monitoring, real-time security alerts and active loss prevention for gas stations, convenience stores, smoke shops, retail and warehouses across the United States.',
   serviceArea: 'United States',
