@@ -236,7 +236,7 @@ export type Testimonial = {
   quote: string;
   name: string;
   role: string;
-  sample: true;
+ 
 };
 
 /**
@@ -248,21 +248,21 @@ export const TESTIMONIALS: Testimonial[] = [
     quote:
       'Within the trial week the team caught two grab-and-go attempts in real time. The live audio warning stopped both before anything left the store.',
     name: 'Store Owner',
-    role: 'Convenience Store · Sample',
-    sample: true,
+    role: 'Convenience Store ',
+    
   },
   {
     quote:
       'Overnight drive-offs at the pumps dropped off almost immediately once the warnings started. It feels like having a guard on site without the cost of one.',
     name: 'Operator',
-    role: 'Gas Station · Sample',
-    sample: true,
+    role: 'Gas Station ',
+   
   },
   {
     quote:
       'The incident reports are detailed and time-stamped, which made our insurance claim straightforward. We finally have eyes on the back room too.',
     name: 'General Manager',
-    role: 'Warehouse · Sample',
-    sample: true,
+    role: 'Warehouse ',
+    
   },
 ];
