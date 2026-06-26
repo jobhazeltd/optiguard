@@ -2,9 +2,8 @@ import Image from 'next/image';
 import { FiArrowRight, FiPhone, FiShield } from 'react-icons/fi';
 import { Button } from '@/components/ui/Button';
 import { CamFrame } from '@/components/ui/CamFrame';
-import { Eyebrow } from '@/components/ui/Eyebrow';
 import { Reveal } from '@/components/ui/Reveal';
-import { PHONE_HREF, PHONE_DISPLAY, SITE } from '@/lib/site';
+import { PHONE_HREF, PHONE_DISPLAY } from '@/lib/site'; // Removed SITE here
 
 export function Hero() {
   return (
