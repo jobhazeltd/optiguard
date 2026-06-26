@@ -7,6 +7,7 @@ export const PHONE_DISPLAY = '+1 (929) 314-0668';
 export const PHONE_E164 = '+19293140668';
 export const EMAIL = 'Optiguardmonitoring@gmail.com';
 export const WHATSAPP_URL = 'https://wa.me/19293140668';
+export const FACEBOOK_URL = 'https://www.facebook.com/optiguardmonitoring';
 export const PHONE_HREF = `tel:${PHONE_E164}`;
 export const EMAIL_HREF = `mailto:${EMAIL}`;
 
