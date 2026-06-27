@@ -6,7 +6,10 @@ import { TrustStats } from '@/components/sections/TrustStats';
 import { Services } from '@/components/sections/Services';
 import { HowItWorks } from '@/components/sections/HowItWorks';
 import { Platform } from '@/components/sections/Platform';
+import { VerificationPipeline } from '@/components/sections/VerificationPipeline';
+import { ActivityLogs } from '@/components/sections/ActivityLogs';
 import { Industries } from '@/components/sections/Industries';
+import { IndustryTargeting } from '@/components/sections/IndustryTargeting';
 import { Operators } from '@/components/sections/Operators';
 import { WhyOptiGuard } from '@/components/sections/WhyOptiGuard';
 import { FreeTrialCTA } from '@/components/sections/FreeTrialCTA';
@@ -43,7 +46,10 @@ export default function HomePage() {
       <Services />
       <HowItWorks />
       <Platform />
+      <VerificationPipeline />
+      <ActivityLogs />
       <Industries />
+      <IndustryTargeting />
       <Operators />
       <WhyOptiGuard />
       <FreeTrialCTA />
