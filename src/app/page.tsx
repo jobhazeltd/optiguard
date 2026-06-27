@@ -22,8 +22,17 @@ export default function HomePage() {
     if ('scrollRestoration' in window.history) {
       window.history.scrollRestoration = 'manual';
     }
-    
-    // 2. Window ko directly x: 0, y: 0 par bhej dein
+
+    // 2. Agar URL me hash hai (jaise /#industries kisi doosre page se aaya),
+    //    to us section par scroll karein — warna top par bhej dein.
+    const hash = window.location.hash;
+    if (hash.length > 1) {
+      const el = document.querySelector(hash);
+      if (el) {
+        requestAnimationFrame(() => el.scrollIntoView());
+        return;
+      }
+    }
     window.scrollTo(0, 0);
   }, []);
 
