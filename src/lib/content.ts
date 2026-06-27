@@ -12,6 +12,9 @@ import {
   FiActivity,
   FiCpu,
   FiPhoneCall,
+  FiTool,
+  FiPackage,
+  FiTruck,
 } from 'react-icons/fi';
 
 export type Service = {
@@ -356,5 +359,125 @@ export const PRICING_TIERS: PricingTier[] = [
     ctaLabel: 'Request a quote',
     ctaText:
       'Hi OptiGuard, I would like a custom Enterprise Sentinel quote for a 50+ camera/node deployment.',
+  },
+];
+
+/* ───────────────────  ENTERPRISE FEATURE MODULES  ─────────────────── */
+
+/** Module 1 — Hybrid AI Edge & 24/7 Command Center Verification Pipeline. */
+export type PipelineStage = {
+  icon: IconType;
+  step: string;
+  title: string;
+  description: string;
+};
+
+export const VERIFICATION_PIPELINE: PipelineStage[] = [
+  {
+    icon: FiCpu,
+    step: '01',
+    title: 'Edge AI filtering',
+    description:
+      'On-camera object-recognition models analyze every frame locally and discard routine motion — weather, animals, headlights, passing traffic — filtering out up to 99% of false alarms before they ever leave your site.',
+  },
+  {
+    icon: FiActivity,
+    step: '02',
+    title: 'Threat scoring',
+    description:
+      'Events that survive the edge filter are scored in real time for intrusion, loitering, concealment and tamper signatures, then escalated by priority to our command center.',
+  },
+  {
+    icon: FiEye,
+    step: '03',
+    title: 'Human verification',
+    description:
+      'A trained operator reviews the live feed within seconds and confirms a genuine threat — then triggers an on-site audio warning to deter intruders immediately.',
+  },
+  {
+    icon: FiPhoneCall,
+    step: '04',
+    title: 'Intervention & dispatch',
+    description:
+      'Verified critical threats trigger rapid escalation: live talk-down, key-holder notification, and fast, confirmed police dispatch backed by an accurate, evidence-ready report.',
+  },
+];
+
+export const PIPELINE_STAT = {
+  value: '99%',
+  label: 'of false alarms filtered at the edge — before they ever reach an operator',
+};
+
+/** Module 2 — Daily Automated Activity Logs & Smart Video Archiving. */
+export const ARCHIVING_FEATURES: { icon: IconType; title: string; description: string }[] = [
+  {
+    icon: FiUserX,
+    title: 'Tamper-proof entry ledger',
+    description:
+      'Every employee entry and exit, plus each system arming and disarming time, is written to a sequential, tamper-evident log you can audit at any time.',
+  },
+  {
+    icon: FiActivity,
+    title: 'Background health monitoring',
+    description:
+      'Camera uptime, recording status and network connectivity are checked continuously, so an offline camera is flagged instantly — not discovered after an incident.',
+  },
+  {
+    icon: FiVideo,
+    title: 'Smart video archiving',
+    description:
+      'Flagged events are indexed and retained for your plan’s retention window, so the exact clip you need for insurance or police is only a search away.',
+  },
+];
+
+/** Representative rows for the auto-generated daily report preview (sample UI). */
+export const SAMPLE_DAILY_LOG: { time: string; event: string; status: string }[] = [
+  { time: '21:04', event: 'System armed — closing staff', status: 'OK' },
+  { time: '23:18', event: 'After-hours motion — rear lot', status: 'VERIFIED' },
+  { time: '02:41', event: 'Camera 04 reconnected', status: 'HEALTHY' },
+  { time: '06:00', event: 'Daily activity report emailed', status: 'SENT' },
+];
+
+/** Module 3 — Commercial Industry Targeting Grid. */
+export type TargetSector = {
+  icon: IconType;
+  name: string;
+  description: string;
+  triggers: string[];
+};
+
+export const TARGET_SECTORS: TargetSector[] = [
+  {
+    icon: FiTool,
+    name: 'Construction Sites',
+    description:
+      'Open lots full of high-value equipment, copper and materials are prime overnight targets with no staff on site.',
+    triggers: [
+      'After-hours motion zones across the lot perimeter',
+      'Equipment & copper-theft loitering alerts',
+      'Trespass detection on scaffolding and storage areas',
+    ],
+  },
+  {
+    icon: FiPackage,
+    name: 'Commercial Logistics Warehouses',
+    description:
+      'Loading docks and yards see constant movement — and constant exposure to theft and unauthorized access.',
+    triggers: [
+      'Loading-dock and bay-door intrusion monitoring',
+      'After-hours yard and perimeter breach alerts',
+      'Inventory and trailer-tampering detection',
+    ],
+  },
+  {
+    icon: FiTruck,
+    name: 'Auto Dealerships',
+    description:
+      'Rows of unattended vehicles and parts inventory make dealerships a high-risk after-hours target.',
+    triggers: [
+      'Vehicle-lot perimeter and walk-through detection',
+      'Catalytic-converter & parts-tampering alerts',
+      'After-hours showroom and key-room monitoring',
+    ],
   },
 ];
