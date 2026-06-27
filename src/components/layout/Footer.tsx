@@ -1,9 +1,11 @@
 import { FiPhone, FiMail } from 'react-icons/fi';
 import { FaWhatsapp } from 'react-icons/fa';
+import Link from 'next/link';
 import { Logo } from '@/components/common/Logo';
 import {
   SITE,
   FOOTER_LINKS,
+  LEGAL_LINKS,
   PHONE_DISPLAY,
   PHONE_HREF,
   EMAIL,
@@ -63,13 +65,21 @@ export function Footer() {
           ))}
         </div>
 
-        <div className="mt-14 flex flex-col items-start justify-between gap-3 border-t border-border pt-6 text-xs text-muted sm:flex-row sm:items-center">
+        <div className="mt-14 flex flex-col items-start justify-between gap-4 border-t border-border pt-6 text-xs text-muted sm:flex-row sm:items-center">
           <p>
             © {year} {SITE.legalName}. All rights reserved.
           </p>
-          <p className="font-mono uppercase tracking-[0.18em]">
-            Remote CCTV Monitoring · {SITE.serviceArea}
-          </p>
+          <nav aria-label="Legal" className="flex flex-wrap items-center gap-x-5 gap-y-2">
+            {LEGAL_LINKS.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="transition-colors hover:text-primary"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </nav>
         </div>
       </div>
     </footer>

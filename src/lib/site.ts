@@ -7,9 +7,11 @@ export const PHONE_DISPLAY = '+1 (929) 314-0668';
 export const PHONE_E164 = '+19293140668';
 export const EMAIL = 'Optiguardmonitoring@gmail.com';
 export const WHATSAPP_URL = 'https://wa.me/19293140668';
+// 👉 Replace with your real Facebook page URL. Leave empty ('') to hide the button.
 export const FACEBOOK_URL = 'https://www.facebook.com/optiguardmonitoring';
 export const PHONE_HREF = `tel:${PHONE_E164}`;
 export const EMAIL_HREF = `mailto:${EMAIL}`;
+
 export const SITE = {
   name: 'OptiGuard Monitoring',
   legalName: 'OptiGuard Monitoring',
@@ -61,4 +63,10 @@ export const FOOTER_LINKS: { heading: string; links: NavLink[] }[] = [
       { label: 'Request a free trial', href: '#contact' },
     ],
   },
+];
+
+export const LEGAL_LINKS: NavLink[] = [
+  { label: 'Privacy Policy', href: '/privacy' },
+  { label: 'Terms & Conditions', href: '/terms' },
+  { label: 'Refund Policy', href: '/refund' },
 ];
