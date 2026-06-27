@@ -27,41 +27,42 @@ export const SITE = {
 export type NavLink = { label: string; href: string };
 
 export const NAV_LINKS: NavLink[] = [
-  { label: 'Services', href: '#services' },
-  { label: 'How it works', href: '#how-it-works' },
-  { label: 'Platform', href: '#platform' },
-  { label: 'Industries', href: '#industries' },
-  { label: 'Why OptiGuard', href: '#why-optiguard' },
+  { label: 'Services', href: '/#services' },
+  { label: 'How it works', href: '/#how-it-works' },
+  { label: 'Platform', href: '/#platform' },
+  { label: 'Industries', href: '/#industries' },
+  { label: 'Why OptiGuard', href: '/#why-optiguard' },
   { label: 'Pricing', href: '/pricing' },
-  { label: 'FAQ', href: '#faq' },
+  { label: 'FAQ', href: '/#faq' },
 ];
 
 export const FOOTER_LINKS: { heading: string; links: NavLink[] }[] = [
   {
     heading: 'Platform',
     links: [
-      { label: 'Live CCTV monitoring', href: '#services' },
-      { label: 'How it works', href: '#how-it-works' },
-      { label: 'Monitoring dashboard', href: '#platform' },
-      { label: 'Why OptiGuard', href: '#why-optiguard' },
+      { label: 'Live CCTV monitoring', href: '/#services' },
+      { label: 'How it works', href: '/#how-it-works' },
+      { label: 'Monitoring dashboard', href: '/#platform' },
+      { label: 'Why OptiGuard', href: '/#why-optiguard' },
     ],
   },
   {
     heading: 'Industries',
     links: [
-      { label: 'Gas stations', href: '#industries' },
-      { label: 'Convenience stores', href: '#industries' },
-      { label: 'Smoke shops', href: '#industries' },
-      { label: 'Warehouses', href: '#industries' },
+      { label: 'Gas stations', href: '/#industries' },
+      { label: 'Convenience stores', href: '/#industries' },
+      { label: 'Smoke shops', href: '/#industries' },
+      { label: 'Warehouses', href: '/#industries' },
     ],
   },
   {
     heading: 'Company',
     links: [
-      { label: 'Operations center', href: '#operators' },
-      { label: 'Testimonials', href: '#testimonials' },
-      { label: 'FAQ', href: '#faq' },
-      { label: 'Request a free trial', href: '#contact' },
+      { label: 'Pricing', href: '/pricing' },
+      { label: 'Operations center', href: '/#operators' },
+      { label: 'Testimonials', href: '/#testimonials' },
+      { label: 'FAQ', href: '/#faq' },
+      { label: 'Request a free trial', href: '/#contact' },
     ],
   },
 ];
