@@ -58,7 +58,7 @@ export function Navbar() {
             <FiPhone className="h-4 w-4 text-primary" aria-hidden />
             <span className="font-mono tracking-tight">{PHONE_DISPLAY}</span>
           </a>
-          <Button href="#contact" size="md">
+          <Button href="/#contact" size="md">
             Free 3-Day Trial
           </Button>
         </div>
@@ -96,7 +96,7 @@ export function Navbar() {
             <Button href={WHATSAPP_URL} variant="secondary" onClick={() => setOpen(false)}>
               <FaWhatsapp className="h-4 w-4" aria-hidden /> WhatsApp
             </Button>
-            <Button href="#contact" onClick={() => setOpen(false)}>
+            <Button href="/#contact" onClick={() => setOpen(false)}>
               Free Trial
             </Button>
           </div>
