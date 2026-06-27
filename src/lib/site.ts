@@ -10,7 +10,6 @@ export const WHATSAPP_URL = 'https://wa.me/19293140668';
 export const FACEBOOK_URL = 'https://www.facebook.com/optiguardmonitoring';
 export const PHONE_HREF = `tel:${PHONE_E164}`;
 export const EMAIL_HREF = `mailto:${EMAIL}`;
-
 export const SITE = {
   name: 'OptiGuard Monitoring',
   legalName: 'OptiGuard Monitoring',
