@@ -77,9 +77,9 @@ export function Pricing() {
       </div>
 
       <p className="mx-auto mt-8 max-w-2xl text-center text-xs leading-relaxed text-muted">
-        All plans include live human-verified monitoring and a FREE 3-day trial. Cloud
-        infrastructure nodes are billed at $50 per node / month and can be added to any plan.
-        Prices are in USD and exclude applicable taxes.
+        All plans include live human-verified monitoring and a FREE 3-day trial. Reach 10 or more
+        cameras and the discounted Pro rate applies automatically. Prices are in USD and exclude
+        applicable taxes.
       </p>
     </Section>
   );
