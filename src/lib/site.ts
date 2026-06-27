@@ -32,6 +32,7 @@ export const NAV_LINKS: NavLink[] = [
   { label: 'Platform', href: '#platform' },
   { label: 'Industries', href: '#industries' },
   { label: 'Why OptiGuard', href: '#why-optiguard' },
+  { label: 'Pricing', href: '/pricing' },
   { label: 'FAQ', href: '#faq' },
 ];
 

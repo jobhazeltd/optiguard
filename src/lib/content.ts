@@ -266,3 +266,95 @@ export const TESTIMONIALS: Testimonial[] = [
     
   },
 ];
+
+/* ─────────────────────────────  PRICING  ───────────────────────────── */
+
+/** Single source of truth for the rate logic used by both the pricing cards
+ *  and the interactive calculator. */
+export const PRICING = {
+  baseRate: 100, // $ / camera / month  (under the bundle threshold)
+  bundleRate: 85, // $ / camera / month  (Pro bundle, at/above threshold)
+  bundleThreshold: 10, // cameras required to unlock the bundle rate
+  cloudNodeRate: 50, // $ / cloud infrastructure node / month
+  enterpriseFromRate: 70, // $ / node, starting rate for 50+ deployments
+} as const;
+
+export type PricingTier = {
+  id: string;
+  name: string;
+  audience: string;
+  price: string;
+  priceUnit: string;
+  priceNote: string;
+  description: string;
+  features: string[];
+  ctaLabel: string;
+  ctaText: string; // pre-filled WhatsApp enquiry for this tier
+  highlight?: boolean;
+};
+
+export const PRICING_TIERS: PricingTier[] = [
+  {
+    id: 'starter-guard',
+    name: 'Starter Guard',
+    audience: 'Small Business',
+    price: '$100',
+    priceUnit: 'per camera / month',
+    priceNote: 'Flat-rate base pricing',
+    description:
+      'Professional remote monitoring for a single store or site that needs reliable eyes on a handful of cameras.',
+    features: [
+      'Up to 5 active camera nodes',
+      '7-day cloud video retention',
+      'Real-time motion & tamper detection alerts via email',
+      '1080p stream quality',
+      'Standard support, 9 AM – 5 PM',
+    ],
+    ctaLabel: 'Start free trial',
+    ctaText:
+      "Hi OptiGuard, I'm interested in the Starter Guard plan ($100/camera) and would like to start a free 3-day trial.",
+  },
+  {
+    id: 'pro-shield',
+    name: 'Pro Shield',
+    audience: 'Growing Businesses',
+    price: '$85',
+    priceUnit: 'per camera / month',
+    priceNote: 'Volume bundle (min 10 cameras) · $100 flat for individual nodes',
+    description:
+      'Our most popular plan — AI-assisted monitoring and faster alerting for multi-camera sites and growing operations.',
+    features: [
+      'Up to 25 active nodes (mixed camera & cloud infra monitoring)',
+      '30-day high-availability retention',
+      'AI-powered object & facial recognition',
+      'Instant alerts via SMS & Telegram',
+      '2K / 4K stream support',
+      '24/7 priority ticketing',
+    ],
+    ctaLabel: 'Start free trial',
+    ctaText:
+      "Hi OptiGuard, I'm interested in the Pro Shield plan ($85/camera volume bundle) and would like to start a free 3-day trial.",
+    highlight: true,
+  },
+  {
+    id: 'enterprise-sentinel',
+    name: 'Enterprise Sentinel',
+    audience: 'Custom Infrastructure',
+    price: 'Custom',
+    priceUnit: 'volume quotation',
+    priceNote: 'From $70 per camera / node at 50+ deployments',
+    description:
+      'Tailored monitoring infrastructure with behavioral AI, a named account manager, and contractual uptime for large or multi-site deployments.',
+    features: [
+      'Unlimited nodes',
+      '90-day enterprise video & log retention',
+      'Advanced AI behavioral analytics',
+      'Dedicated account manager',
+      '99.99% uptime SLA',
+      'Custom webhook / API integrations',
+    ],
+    ctaLabel: 'Request a quote',
+    ctaText:
+      'Hi OptiGuard, I would like a custom Enterprise Sentinel quote for a 50+ camera/node deployment.',
+  },
+];
